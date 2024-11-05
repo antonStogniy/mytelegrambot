@@ -28,3 +28,6 @@ jobs:
           java-version: 1.17
       - name: Build with Maven
         run: mvn -B package --file pom.xml
+      - name: Start project
+        with:
+          bot.token: ${{secrets.BOT_TOKEN}}
